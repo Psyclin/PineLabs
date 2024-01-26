@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>PINELabs</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" id="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--		
+		<ul>
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<section class="page_topline ls ms section_padding_15 table_section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3 text-center text-md-left">
+							<div class="page_social_icons">
+								<a class="social-icon soc-facebook" href="#" title="Facebook"></a>
+								<a class="social-icon soc-twitter" href="#" title="Twitter"></a>
+								<a class="social-icon soc-google" href="#" title="Google"></a>
+							</div>
+						</div>
+
+						<div class="col-sm-9 text-center text-md-right">
+
+
+							<div class="media small-teaser">
+								<div class="media-left">
+									<i class="fa fa-phone highlight"></i>
+								</div>
+								<div class="media-body">
+									8 800 259 2698
+								</div>
+							</div>
+
+
+							<div class="media small-teaser">
+								<div class="media-left">
+									<i class="fa fa-envelope highlight"></i>
+								</div>
+								<div class="media-body">
+									a-group@support.com
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<header
+			class="page_header header_white table_section columns_margin_0 toggle-xs-right"
+		  >
+			<div class="container-fluid">
+			  <div class="row">
+				<div class="col-lg-2 col-md-3 col-sm-5">
+				  <a href="index.html" class="logo logo_image">
+					<img src="images/logo.png" alt="" />
+				  </a>
+				  <span class="toggle_menu visible-xs">
+					<span></span>
+				  </span>
+				</div>
+				<!-- eof .header_left_logo -->
+				<div class="col-lg-8 col-md-6 col-sm-2 text-center">
+				  <!-- main nav start -->
+				  <nav class="mainmenu_wrapper">
+					<ul class="mainmenu nav sf-menu">
+					  <li class="active">
+						<a href="index.html">Home</a>
+					  </li>
+  
+					  <li>
+						<a href="group-projects.html">Projects</a>
+					  </li>
+  
+					  <li>
+						<a href="presentations.html">Presentations</a>
+					  </li>
+  
+					  <li>
+						<a href="team.html">Graduate Students</a>
+					  </li>
+  
+					  <li>
+						<a href="publications.html">Publications</a>
+					  </li>
+					  <li>
+						<a href="knowledge-translation.html">Knowledge Translation</a>
+					  </li>
+					</ul>
+				  </nav>
+				  <!-- eof main nav -->
+				  <span class="toggle_menu hidden-xs">
+					<span></span>
+				  </span>
+				</div>
+				<!-- eof .header_mainmenu -->
+  
+				<!-- eof .header_right_buttons -->
+			  </div>
+			</div>
+		  </header>
+
+			<section class="page_breadcrumbs cs main_color2 parallax section_padding_25">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2>Presentations</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="ls page_portfolio section_padding_top_20 section_padding_bottom_75">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-2 text-center">
+							
+							<section class="ls section_padding_top_75 section_padding_bottom_75 columns_padding_25">
+								<div class="container">
+									<div class="row">
+				
+				
+										<div class="col-sm-10 col-sm-push-1">
+				
+											<article class="single-post">
+												<header class="entry-header">
+				
+												
+													<!-- .entry-meta -->
+				
+													<h1 class="entry-title text-center">
+														A study of song and dance
+													</h1>
+													<div class="entry-meta item-meta text-center">
+				
+														<span>
+															<span class="author greylinks">
+																By Admin
+															</span>
+				
+															<span class="date">
+																<time datetime="2017-01-10T15:05:23+00:00" class="entry-date">
+																	Jan 10, 2017
+																</time>
+															</span>
+														</span>
+				
+													</div>
+				
+												</header>
+												<!-- .entry-header -->
+				
+												<div class="entry-content">
+													<section class="columns_padding_0">
+														<div class="container">
+															<div class="row">
+																<div class="col-sm-10 col-sm-push-1">
+																	<div class="embed-responsive embed-responsive-3by2">
+																		<a href="https://www.youtube.com/embed/xKxrkht7CpY" class="embed-placeholder">
+																			<img src="images/gallery/02.jpg" alt="">
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+										
+													<p>
+														Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut wisi enim ad
+														minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
+													</p>
+													<p>
+														Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+														illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo.
+													</p>
+				
+													<div id="blog-more" class="blog-more collapse">
+				
+														<p>
+															Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. Lorem ipsum dolor sit amet, consetetur
+															sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum.
+														</p>
+				
+														<p>
+															Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Ut wisi enim ad minim veniam, quis nostrud
+															exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+														</p>
+														<p>
+															<img class="alignleft" alt="" src="images/side-image.jpg"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. Consetetur sadipscing
+															elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+														</p>
+														<p>
+															Dolore magna aliquam erat volutpat. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+															<span class="highlight">Lorem ipsum dolor</span> sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+															sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat.
+														</p>
+														<p>
+															At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim
+															ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+														</p>
+				
+													</div>
+													<!-- eof blog-more -->
+				
+													<div class="darklinks text-center">
+														<a class="blog-more-toggle collapsed" data-toggle="collapse" href="#blog-more" aria-expanded="false" aria-controls="blog-more">
+															<span class="blog-more-hidden">More</span>
+															<span class="blog-more-visible">Hide</span>
+														</a>
+													</div>
+												</div>
+											</article>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer
+			class="page_footer ds ms section_padding_top_100 section_padding_bottom_100"
+		  >
+			<div class="container">
+			  <div class="row">
+				<div
+				  class="col-md-4 col-sm-6 to_animate text-center"
+				  data-animation="fadeInUp"
+				>
+				  <div class="widget widget_text greylinks topmargin_20">
+					<h3 class="widget-title">PINE labs</h3>
+					<p>
+					  Participation, Inclusion, and Education.
+					</p>
+				 
+					&nbsp;
+				  </div>
+				</div>
+				<div
+				  class="col-md-4 col-sm-6 to_animate text-center"
+				  data-animation="fadeInUp"
+				>
+				  <div class="widget widget_text greylinks topmargin_20">
+					<h3 class="widget-title">Contacts</h3>
+					<p class="margin_0">
+					  University of Alberta, 2-30 Corbett Hall
+					</p>
+					<p class="margin_0">Edmonton, Alberta, Canada T6G 2G4</p>
+					<p class="margin_0">Shu-Ping Chen, Ph.D., OT Reg.(Alberta)</p>
+					<p class="margin_0">(780)492-3905</p>
+					<p class="margin_0">
+					  <a href="mailto:shuping2@ualberta.ca "
+						>shuping2@ualberta.ca
+					  </a>
+					</p>
+				  </div>
+				</div>
+				<div
+				  class="col-md-4 col-sm-6 to_animate text-center clear-sm"
+				  data-animation="fadeInUp"
+				>
+				  <div class="widget widget_nav_menu greylinks topmargin_20">
+					<h3 class="widget-title">Navigation</h3>
+					<ul class="menu">
+					  <li class="">
+						<a href="index.html">Home</a>
+					  </li>
+					  <li class="">
+						<a href="group-projects.html">Projects</a>
+					  </li>
+					  <li class="">
+						<a href="presentations.html">Presentations</a>
+					  </li>
+					  <li class="">
+						<a href="team.html">Graduate Students</a>
+					  </li>
+					  <li class="">
+						<a href="publications.html">Publications</a>
+					  </li>
+					  <li class="">
+						<a href="knowledge-translation.html">Knowledge Translation</a>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </footer>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
