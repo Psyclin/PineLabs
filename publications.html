@@ -4,320 +4,610 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
-<!--<![endif]-->
+  <!--<![endif]-->
 
-<head>
-	<title>PINELabs</title>
-	<meta charset="utf-8">
-	<!--[if IE]>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<![endif]-->
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>PINELabs</title>
+    <meta charset="utf-8" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/animations.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/main.css" id="color-switcher-link">
-	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" id="color-switcher-link" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-	<!--[if lt IE 9]>
-		<script src="js/vendor/html5shiv.min.js"></script>
-		<script src="js/vendor/respond.min.js"></script>
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
-	<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+      <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+  </head>
 
-</head>
+  <body>
+    <!--[if lt IE 9]>
+      <div class="bg-danger text-center">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/" class="highlight"
+          >upgrade your browser</a
+        >
+        to improve your experience.
+      </div>
+    <![endif]-->
 
-<body>
-	<!--[if lt IE 9]>
-		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
-	<![endif]-->
+    <div class="preloader">
+      <div class="preloader_image"></div>
+    </div>
 
-	<div class="preloader">
-		<div class="preloader_image"></div>
-	</div>
+    <!-- search modal -->
+    <div
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="search_modal"
+      id="search_modal"
+    >
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">
+          <i class="rt-icon2-cross2"></i>
+        </span>
+      </button>
+      <div class="widget widget_search">
+        <form
+          method="get"
+          class="searchform search-form form-inline"
+          action="./"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              value=""
+              name="search"
+              class="form-control"
+              placeholder="Search keyword"
+              id="modal-search-input"
+            />
+          </div>
+          <button type="submit" class="theme_button">Search</button>
+        </form>
+      </div>
+    </div>
 
-	<!-- search modal -->
-	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">
-				<i class="rt-icon2-cross2"></i>
-			</span>
-		</button>
-		<div class="widget widget_search">
-			<form method="get" class="searchform search-form form-inline" action="./">
-				<div class="form-group">
-					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
-				</div>
-				<button type="submit" class="theme_button">Search</button>
-			</form>
-		</div>
-	</div>
-
-	<!-- Unyson messages modal -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-		<div class="fw-messages-wrap ls with_padding">
-			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-			<!--		
+    <!-- Unyson messages modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+      <div class="fw-messages-wrap ls with_padding">
+        <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+        <!--		
 		<ul>
 			<li>Message To User</li>
 		</ul>
 		-->
-
-		</div>
-	</div>
-	<!-- eof .modal -->
-
-	<!-- wrappers for visual page editor and boxed version of template -->
-	<div id="canvas">
-		<div id="box_wrapper">
-
-			<!-- template sections -->
-
-			<div id="header"></div>
-
-			<section class="page_breadcrumbs cs main_color2 parallax section_padding_25">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h2>Publications</h2>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="ls page_portfolio section_padding_top_100 section_padding_bottom_75">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-
-							<div class="isotope_container isotope row masonry-layout columns_margin_bottom_30 columns_margin_top_0">
-
-								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
-
-									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
-
-										<div class="item-content entry-content">
-											<header class="entry-header">
-
-												<h4 class="entry-title">
-													<a href="" rel="bookmark">Duis autem eumre dolor hendrerit vulputate eros et accumsan et iusto odio dignissim.</a>
-												</h4>
-
-												<span class="date small-text">
-													<time datetime="2017-01-10" class="entry-date">
-														Jan 10, 2017
-													</time>
-												</span>
-
-											</header>
-											<!-- .entry-header -->
-											<p>tom dankman, peter pumpkin eater, jack melborn</p>
-
-										</div>
-									</article>
-
-								</div>
-
-								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
-
-									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
-
-										<div class="item-media entry-thumbnail">
-											<img src="images/gallery/01.jpg" alt="">
-											<div class="media-links">
-												<a class="abs-link" title="" href="pdfs/ASUS_GA401QM.pdf"></a>
-											</div>
-										</div>
-
-										<div class="item-content entry-content">
-											<header class="entry-header">
-
-												<h4 class="entry-title">
-													<a href="pdfs/ASUS_GA401QM.pdf" rel="bookmark">Duis autem eumre dolor hendrerit vulputate eros et accumsan et iusto odio dignissim.</a>
-												</h4>
-
-												<span class="date small-text">
-													<time datetime="2017-01-10" class="entry-date">
-														Jan 10, 2017
-													</time>
-												</span>
-
-											</header>
-											<!-- .entry-header -->
-
-											<p>tom dankman, peter pumpkin eater, jack melborn</p>
-
-										</div>
-									</article>
-
-								</div>
-
-								
-
-								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
-
-									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
-
-										<div class="item-media entry-thumbnail">
-											<img src="images/gallery/01.jpg" alt="">
-											<div class="media-links">
-												<a class="abs-link" title="" href="pdfs/ASUS_GA401QM.pdf"></a>
-											</div>
-										</div>
-
-										<div class="item-content entry-content">
-											<header class="entry-header">
-
-												<h4 class="entry-title">
-													<a href="pdfs/ASUS_GA401QM.pdf" rel="bookmark">Duis autem eumre dolor hendrerit vulputate eros et accumsan et iusto odio dignissim.</a>
-												</h4>
-
-												<span class="date small-text">
-													<time datetime="2017-01-10" class="entry-date">
-														Jan 10, 2017
-													</time>
-												</span>
-
-											</header>
-											<!-- .entry-header -->
-
-											<p>tom dankman, peter pumpkin eater, jack melborn</p>
-
-										</div>
-									</article>
-
-								</div>
-
-								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
-
-									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
-
-										<div class="item-media entry-thumbnail">
-											<img src="images/gallery/01.jpg" alt="">
-											<div class="media-links">
-												<a class="abs-link" title="" href="pdfs/ASUS_GA401QM.pdf"></a>
-											</div>
-										</div>
-
-										<div class="item-content entry-content">
-											<header class="entry-header">
-
-												<h4 class="entry-title">
-													<a href="pdfs/ASUS_GA401QM.pdf" rel="bookmark">Duis autem eumre dolor hendrerit vulputate eros et accumsan et iusto odio dignissim.</a>
-												</h4>
-
-												<span class="date small-text">
-													<time datetime="2017-01-10" class="entry-date">
-														Jan 10, 2017
-													</time>
-												</span>
-
-											</header>
-											<!-- .entry-header -->
-
-											<p>tom dankman, peter pumpkin eater, jack melborn</p>
-
-										</div>
-									</article>
-
-								</div>
-
-								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
-
-									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
-
-										<div class="item-media entry-thumbnail">
-											<img src="images/gallery/01.jpg" alt="">
-											<div class="media-links">
-												<a class="abs-link" title="" href="pdfs/ASUS_GA401QM.pdf"></a>
-											</div>
-										</div>
-
-										<div class="item-content entry-content">
-											<header class="entry-header">
-
-												<h4 class="entry-title">
-													<a href="pdfs/ASUS_GA401QM.pdf" rel="bookmark">Duis autem eumre dolor hendrerit vulputate eros et accumsan et iusto odio dignissim.</a>
-												</h4>
-
-												<span class="date small-text">
-													<time datetime="2017-01-10" class="entry-date">
-														Jan 10, 2017
-													</time>
-												</span>
-
-											</header>
-											<!-- .entry-header -->
-
-											<p>tom dankman, peter pumpkin eater, jack melborn</p>
-
-										</div>
-									</article>
-
-								</div>
-
-								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
-
-									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
-
-										<div class="item-media entry-thumbnail">
-											<img src="images/gallery/01.jpg" alt="">
-											<div class="media-links">
-												<a class="abs-link" title="" href="pdfs/ASUS_GA401QM.pdf"></a>
-											</div>
-										</div>
-
-										<div class="item-content entry-content">
-											<header class="entry-header">
-
-												<h4 class="entry-title">
-													<a href="pdfs/ASUS_GA401QM.pdf" rel="bookmark">Duis autem eumre dolor hendrerit vulputate eros et accumsan et iusto odio dignissim.</a>
-												</h4>
-
-												<span class="date small-text">
-													<time datetime="2017-01-10" class="entry-date">
-														Jan 10, 2017
-													</time>
-												</span>
-
-											</header>
-											<!-- .entry-header -->
-
-											<p>tom dankman, peter pumpkin eater, jack melborn</p>
-
-										</div>
-									</article>
-
-								</div>
-
-							<!-- eof .isotope_container.row -->
-
-							<div class="row">
-								<div class="col-sm-12 text-center">
-									<i class="fa fa-circle-o-notch fa-spin loadmore_spinner"></i>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-<div id="footer"></div>
-
-		</div>
-		<!-- eof #box_wrapper -->
-	</div>
-	<!-- eof #canvas -->
-
-	<script src="js/compressed.js"></script>
-	<script src="js/main.js"></script>
-
-
-</body>
-
+      </div>
+    </div>
+    <!-- eof .modal -->
+
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+      <div id="box_wrapper">
+        <!-- template sections -->
+
+        <div id="header"></div>
+
+        <section
+          class="page_breadcrumbs cs main_color2 parallax section_padding_25"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h2>Publications</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="ls page_portfolio section_padding_top_100 section_padding_bottom_75"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div
+                  class="isotope_container isotope row masonry-layout columns_margin_bottom_30 columns_margin_top_0"
+                >
+                  <div class="isotope-item col-lg-12 col-md-6 col-sm-12">
+                    <h1 style="text-align: center"><u>Shu-Ping Chen</u></h1>
+
+                    <h3 style="text-align: center">Books and Book chapters</h3>
+                    <ul>
+                      <li>
+                        Krupa, T., Edgelow, M., Chen, S-P., &amp; Mieras, C.
+                        (2021). Promoting Activity and Participation in
+                        Individuals with Serious Mental Illness: The Action Over
+                        Inertia Approach. Taylor &amp; Francis Group, UK:
+                        Routledge.
+                      </li>
+                      <li>
+                        Chen, S-P, &amp; Stuart, H. (2021). Prejudices and
+                        discrimination related to substance use problems. In K.
+                        S. Dobson &amp; H. Stuart (eds.). The Stigma of Mental
+                        Illness. Oxford, England: Oxford University Press.
+                      </li>
+                    </ul>
+                    <h3 style="text-align: center">Journal Articles</h3>
+
+                    <ul>
+                      <li>
+                        Au, M., Knelson, J., Grinde, G., & Chen, S-P.
+                        (accepted). Exploring the role of reflective activities
+                        in occupational therapy education: Key elements for
+                        meaningful experiences. Occupational Therapy in Health
+                        Care.
+                      </li>
+                      <li>
+                        Arreola, K., Cho, S., Phan, C., Unger, K., Chang, W-P.,
+                        & Chen, S-P. (2024). Exploring mental health experiences
+                        and expectations among international engineering
+                        students – Insights to inform university support.
+                        European Journal of Engineering Education.
+                        <a href="https://doi.org/10.1080/03043797.2024.2417345"
+                          >doi: 10.1080/03043797.2024.2417345</a
+                        >
+                      </li>
+                      <li>
+                        Shankar, J., Chen, S-P., Lai, D., Joseph, S., Narayan,
+                        R., Sulman, Z., Ali, A., & Kharat, P. (2024). Mental
+                        health challenges of recent immigrants in precarious
+                        work environment – A qualitative study. Frontiers in
+                        Psychiatry.
+                        <a href="https://doi.org/10.3389/fpsyt.2024.1428276"
+                          >doi: 10.3389/fpsyt.2024.1428276</a
+                        >
+                      </li>
+                      <li>
+                        Chen, S-P., Shankar, J., Kharat, P., Fan, S. S., Liu,
+                        H-T., & Asante, B. (2024). Participatory Action
+                        Research: A Tool to Develop Occupational Health and
+                        Safety Education for New Immigrant Workers. Action
+                        Research.
+                        <a href="https://doi.org/10.1177/14767503241267895"
+                          >doi: 10.1177/14767503241267895</a
+                        >
+                      </li>
+                      <li>
+                        Bellamy, A., Fafard, S., Phung, C., Tremblay, T., Chan,
+                        W-P., Chan, PYS., & Chen, S-P. (2024). Cannabis use and
+                        awareness of risks and policies among Canadian
+                        university students post-legalization. Journal of
+                        College Student Mental Health.
+                        <a href="https://doi.org/10.1080/28367138.2024.2372720"
+                          >doi: 10.1080/28367138.2024.2372720</a
+                        >
+                      </li>
+                      <li>
+                        Bahji, A., Boonmark, P., Koller, M., Milani, C.,
+                        Shtherland, C., Horgan, S., Chen, S-P., Patten, S., &
+                        Stuart, H. (2024). Associations between gender
+                        expression, protective coping strategies, alcohol
+                        saliency, and high-risk alcohol use in post-secondary
+                        students at two Canadian universities. International
+                        Journal of Environmental Research and Public Health, 21,
+                        107.
+                        <a href="https://doi.org/10.3390/ijerph21010107"
+                          >doi: 10.3390/ijerph21010107</a
+                        >
+                      </li>
+                      <li>
+                        Chen, YC., Chang, WP., Liang, KJ., Chen, CL., Chen, HY.,
+                        Chen, S-P., & Chan, PYS. (2024). The effects of
+                        neurofeedback training for children with cerebral palsy
+                        and co-occurring attention deficits: A Pilot Study.
+                        Child: Care, Health and Development, 50, e13231.
+                        <a href="https://doi.org/10.1111/cch.13231"
+                          >doi: 10.1111/cch.13231</a
+                        >
+                      </li>
+                      <li>
+                        Thomas, E., Benjamin-Thomas, T., Sithambaram, A.,
+                        Shankar, J., & Chen, S-P. (2024). Participatory Action
+                        Research in People with Serious Mental Illness: A
+                        Scoping Review. Qualitative Health Research, 34(1-2),
+                        3-19.
+                        <a href="https://doi.org/10.1177/10497323231208111"
+                          >doi: 10.1177/10497323231208111</a
+                        >
+                      </li>
+                      <li>
+                        Brehon, K., Miciak, M., Hung, P., Chen, S-P., Perreault,
+                        K., et al. (2023). None of Us Are Lying: An Interpretive
+                        Description of the Search for Legitimacy and the Journey
+                        to Access Quality Health Services by Individuals Living
+                        with Long COVID. BMC Health Service Research, 23:1396.
+                        <a href="https://doi.org/10.1186/s12913-023-10288-y"
+                          >doi: 10.1186/s12913-023-10288-y</a
+                        >
+                      </li>
+                      <li>
+                        Adams, A., Joe, C., Klinger, N., Laforest, E, Shankar,
+                        J., & Chen, S-P. (2023). It’s Just a Checklist:
+                        Examining the current status of Occupational Health and
+                        Safety training for new immigrant workers in Canada.
+                        Journal of Occupational and Environmental Medicine,
+                        65(8), 677-684.
+                        <a href="https://doi.org/10.1097/JOM.0000000000002879"
+                          >doi: 10.1097/JOM.0000000000002879</a
+                        >
+                      </li>
+                      <li>
+                        Fan, S., & Chen, S-P. (2023). Western services for a
+                        Chinese-Canadian family with children with Autism
+                        spectrum disorder: Does culture play a role? Disability
+                        and Rehabilitation, 46(12), 2584-2592.
+                        <a href="https://doi.org/10.1080/09638288.2023.2227566"
+                          >doi: 10.1080/09638288.2023.2227566</a
+                        >
+                      </li>
+                      <li>
+                        Chen, S-P., Liu, H-T., Appelt, J. C., Klassen, B. L.,
+                        Liu, L., Smith, J. L., & Miguel-Cruz, A. (2023).
+                        Feasibility of mindfulness-based intervention for
+                        veterans managing chronic pain. Canadian Journal of
+                        Occupational Therapy, 90(3), 303-314.
+                        <a href="https://doi.org/10.1177/00084174231156276"
+                          >doi: 10.1177/00084174231156276</a
+                        >
+                      </li>
+                      <li>
+                        Jarus, T., Leclair, L.L., Ghahari, S., Chen, S-P.,
+                        Leung, A., & Shaw, L. (2023). Profiling the research
+                        activities of Canadian occupational therapy and
+                        occupational science faculty members. Canadian Journal
+                        of Occupational Therapy, 1-9.
+                        <a href="https://doi.org/10.1177/00084174221145820"
+                          >doi: 10.1177/00084174221145820</a
+                        >
+                      </li>
+                      <li>
+                        Isaacs, J.Y., Thompson, K., Yakovenko, I., Dobson, K.,
+                        Chen, S-P., Hudson, A., & Stewart, S.H. (2023). Social
+                        norms of college students engaging in non-medical
+                        prescription drug use to get high: What’s sex got to do
+                        with it? Journal of American College Health, 71(8),
+                        2587-2594.
+                        <a href="https://doi.org/10.1080/07448481.2021.1979007"
+                          >doi: 10.1080/07448481.2021.1979007</a
+                        >
+                      </li>
+                      <li>
+                        Diduck, B., Rawleigh, M., Pilapil, A., Geeraert, E.,
+                        Mah, A., & Chen, S-P. (2022). Mental health needs of
+                        homeless and recently housed individuals in Canada.
+                        Health and Social Care in the Community, 30,
+                        e3579-e3591.
+                        <a href="https://doi.org/10.1111/hsc.13996"
+                          >doi: 10.1111/hsc.13996</a
+                        >
+                      </li>
+                      <li>
+                        Baghoori, D., Roduta Roberts, M., & Chen, S-P. (2022).
+                        Mental health, Coping strategies, and social support
+                        among international students at a Canadian university.
+                        Journal of American College Health.
+                        <a href="https://doi.org/10.1080/07448481.2022.2114803"
+                          >doi: 10.1080/07448481.2022.2114803</a
+                        >
+                      </li>
+                      <li>
+                        Shankar, J., Lai, D., Chen, S-P., Turin, T., Joseph, S.,
+                        & Mi, E. (2022). Highly educated immigrant workers’
+                        perspectives of occupational health and safety and work
+                        conditions that challenge work safety. International
+                        Journal of Environmental Research and Public Health,
+                        19(14), 8757,
+                        <a href="https://doi.org/10.3390/ijerph19148757"
+                          >doi: 10.3390/ijerph19148757</a
+                        >
+                      </li>
+                      <li>
+                        Hallett, A, & Chen, S-P. (2022). Perceptions and
+                        attitudes of university and college students towards
+                        cannabis use. International Journal of Mental Health and
+                        Addiction.
+                        <a href="https://doi.org/10.1007/s11469-022-00777-2"
+                          >doi: 10.1007/s11469-022-00777-2</a
+                        >
+                      </li>
+                      <li>
+                        Chen, S-P., Chang, WP., Stuart, H., & Chen, S-P. (2021).
+                        Self-Reflection and Screening Mental Health on Canadian
+                        Campuses: Validation of the Mental Health Continuum
+                        Model. BMC Psychology, 8:76,
+                        <a href="https://doi.org/10.1186/s40359-020-00446-w"
+                          >doi: 10.1186/s40359-020-00446-w</a
+                        >
+                      </li>
+                      <li>
+                        Chang, WP., Stuart, H., & Chen, S-P. (2021). Alcohol
+                        use, drug use, and psychological distress in university
+                        students: Findings from a Canadian campus survey.
+                        International Journal of Mental health and Addiction.
+                        <a href="https://doi.org/10.1007/s11469-021-00519-w"
+                          >doi: 10.1007/s11469-021-00519-w</a
+                        >
+                      </li>
+                      <li>
+                        Nogueira-Arjona, R., Kara Thompson, K., Milios, A.,
+                        Maloney, A., Keith S. Dobson, K.S., Terry Krupa, T.,
+                        Chen, S-P., & Stewart, S.H. (2021). The mediating
+                        effects of protective behavioral strategies on the
+                        relationship between addiction-prone personality traits
+                        and alcohol-related problems among emerging adults.
+                        International Journal of Environmental Research and
+                        Public Health, 18(4), 1814.
+                        <a href="https://doi.org/10.3390/ijerph18041814"
+                          >doi: 10.3390/ijerph18041814</a
+                        >
+                      </li>
+                      <li>
+                        Riffel, T., & Chen, S-P. (2020). Stigma in healthcare?
+                        Exploring the knowledge, attitudes, and behavioural
+                        responses of healthcare professionals and students
+                        toward individuals with mental illnesses. Psychiatric
+                        Quarterly, 91(4), 1103-1119.
+                        <a href="https://doi.org/10.1007/s11126-020-09809-3"
+                          >doi: 10.1007/s11126-020-09809-3</a
+                        >
+                      </li>
+                      <li>
+                        Chang, WP., Chen, T., Stuart, H., & Chen, S-P. (2020).
+                        Environmental scan of mental wellness resources
+                        available on Canadian postsecondary campuses. Higher
+                        Education.
+                        <a href="https://doi.org/10.1007/s10734-020-00594-3"
+                          >doi: 10.1007/s10734-020-00594-3</a
+                        >
+                      </li>
+                      <li>
+                        Riffel, T., & Chen, S-P. (2020). Exploring the
+                        knowledge, attitudes, and behavioural responses of
+                        healthcare students towards mental illnesses – A
+                        qualitative study. International Journal of
+                        Environmental Research and Public Health. 17(1), 25,
+                        <a href="https://doi.org/10.3390/ijerph17010025"
+                          >doi: 10.3390/ijerph17010025</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="isotope-item col-lg-12 col-md-6 col-sm-12">
+                    <h1 style="text-align: center">
+                      <u>Mary Roduta Roberts</u>
+                    </h1>
+                    <h3 style="text-align: center">Journal Articles</h3>
+                    <ul>
+                      <li>
+                        St. Jean, C.*, Werther, K., &amp; Roduta Roberts, M.
+                        (2024). OSCEs’ impact on occupational therapy student
+                        learning: Insights from second- and third-year focus
+                        groups. Open Journal of Occupational Therapy.
+                      </li>
+                      <li>
+                        McCartan, C.*, King, S., &amp; Roduta Roberts, M.
+                        (2023). Collaborative Analysis of Observational Data in
+                        Healthcare. New Trends in Qualitative Research, 16,
+                        e786.
+                        <a href="https://doi.org/10.36367/ntqr.16.2023.e786"
+                          >https://doi.org/10.36367/ntqr.16.2023.e786</a
+                        >
+                      </li>
+                      <li>
+                        St. Jean, C.*, King, S., &amp; Roduta Roberts, M.
+                        (2023). Validity evidence for the use of a single-point
+                        rubric to support interprofessional teaching and
+                        learning. Journal of Interprofessional Education and
+                        Practice, 32, 1-8.
+                        <a href="https://doi.org/10.1016/j.xjep.2023.100631"
+                          >doi.org/10.1016/j.xjep.2023.100631</a
+                        >
+                      </li>
+                      <li>
+                        MacKenzie, D., Martini, R., Roduta Roberts, M.,
+                        Campbell-Rempel, M. A., &amp; Ausman*, C. (2023).
+                        Perception of COVID-19 impact on Canadian occupational
+                        therapy curricula: Academic &amp; fieldwork. Canadian
+                        Journal of Occupational Therapy, 90, 185-196.
+                        <a href="https://doi.org/10.1177/00084174231152059"
+                          >doi: 10.1177/00084174231152059</a
+                        >
+                      </li>
+                      <li>
+                        Hruczkowski, C. B.*, Roduta Roberts, M., &amp; King, S.
+                        (2022). Learner drawings of interprofessional education
+                        and collaborative practice. Journal of Allied Health,
+                        51(4), e85-e94.
+                      </li>
+                      <li>
+                        Kinsella, E.A., Jarus, T., Lysaght, R., Smith, K.,
+                        Schmitz, C., Thomas, A., Cameron, D., Duncan, A., Roduta
+                        Roberts, M., MacKenzie, D., Martini, R., and Paterson,
+                        M. (2022). Research on Education: Advancing a national
+                        and international agenda in times of transformation. OT
+                        Now, 30-33.
+                      </li>
+                      <li>
+                        Guptill, C., Slade, T.*, Baadjou, V., Roduta-Roberts,
+                        M., de Lisle, R., Rennie-Salonen, B., Ackermann, B.,
+                        Ginsborg, J., Visentin, P., &amp; Wijsman, S. (2022).
+                        Validity and reliability of the Musicians’ Health
+                        Literacy Questionnaire, MHL-Q19. Frontiers in
+                        Psychology, 13:886815.
+                        <a href="https://doi.org/10.3389/fsyg.2022.886815"
+                          >doi: 10.3389/fsyg.2022.886815</a
+                        >
+                      </li>
+                      <li>
+                        Baghoori, D.*, Roduta Roberts, M., &amp; Chen, S-P.
+                        (2022). Mental health, coping strategies, and social
+                        support among international students at a Canadian
+                        university. Journal of American College Health. Advance
+                        online publication.
+                        <a href="https://doi.org/10.1080/07448481.2022.2114803"
+                          >doi: 10.1080/07448481.2022.2114803</a
+                        >
+                      </li>
+                      <li>
+                        Gotch, C. M., &amp; Roduta Roberts, M. (2022).
+                        Developing communication solutions within a
+                        teacher-researcher partnership. Educational Assessment,
+                        27, 247-268.
+                        <a href="https://doi.org/10.1080/10627197.2022.2052723"
+                          >doi: 10.1080/10627197.2022.2052723</a
+                        >
+                      </li>
+                      <li>
+                        Roduta Roberts, M., Gotch, C. M., Cook, M., Werther, K.,
+                        &amp; Chao, I. C. I.* (2022). Using think-aloud
+                        interviews to examine a clinically oriented performance
+                        assessment rubric. Measurement: Interdisciplinary
+                        Research and Perspectives, 20, 139-150.
+                      </li>
+                      <li>
+                        Azad Khaneghah, P.*, Roduta Roberts, M. &amp; Liu, L.
+                        (2022). Alberta Rating Index for Apps (ARIA): Study of
+                        reliability and validity. Canadian Journal of
+                        Occupational Therapy, 89, 326-338.
+                        <a href="https://doi.org/10.1177/00084174221085451"
+                          >doi: 10.1177/00084174221085451</a
+                        >
+                      </li>
+                      <li>
+                        McCabe, E.*, Roduta Roberts, M., Miciak, M., Sun, H.,
+                        &amp; Gross, D. P. (2021). An investigation of the
+                        measurement properties of the Physiotherapy Therapeutic
+                        Relationship Measure in patients with musculoskeletal
+                        conditions. European Journal of Physiotherapy. Advance
+                        online publication.
+                        <a href="https://doi.org/10.1080/21679169.2021.2005138"
+                          >doi: 10.1080/21679169.2021.2005138</a
+                        >
+                      </li>
+                      <li>
+                        McCabe, E.*, Miciak, M., Roduta Roberts, M., Sun, L.,
+                        &amp; Gross, D. P. (2021). Measuring therapeutic
+                        relationship in physiotherapy: Conceptual foundations.
+                        Physiotherapy Theory and Practice. Advance online
+                        publication.
+                        <a href="https://doi.org/10.1080/09593985.2021.1987604"
+                          >doi: 10.1080/09593985.2021.1987604</a
+                        >
+                      </li>
+                      <li>
+                        Chao, I. C. I.*, King, S., Gotch, C. M., &amp; Roduta
+                        Roberts, M. (2021). Exploring the educational impact of
+                        using a single-point rubric through validation in
+                        interprofessional education. Journal of Allied Health,
+                        50, 253-262.
+                      </li>
+                      <li>
+                        Chao, I. C. I.*, Violato, E.*, Concannon, B., McCartan,
+                        C.*, King, S., &amp; Roduta Roberts, M. (2021). Ethnic
+                        and gender bias in Objective Structured Clinical
+                        Examination (OSCE) in healthcare education: A critical
+                        review. Education in the Health Professions, 4, 37-49.
+                      </li>
+                      <li>
+                        Brown, C. A., Rivard, A., Bellmore, L., Kane, M., Roduta
+                        Roberts, M., &amp; Wang, Y. (2021). Hand self-shiatsu to
+                        promote sleep among Veterans and their family members –
+                        A non-randomized, multiple-methods study. Journal of
+                        Military, Veteran, and Family Health, 7, 50-60.
+                        <a href="https://doi.org/10.3138/jmvfh-2020-0054"
+                          >doi.org/10.3138/jmvfh-2020-0054</a
+                        >
+                      </li>
+                      <li>
+                        McCabe, E.*, Miciak, M., Roduta Roberts, M., Sun, L.,
+                        Holt, C., Kleiner, M. J., &amp; Gross, D. P. (2021).
+                        Development of the Physiotherapy Therapeutic
+                        Relationship Measure. European Journal of Physiotherapy.
+                        Advance online publication.
+                        <a href="https://doi.org/10.1080/21679169.2020.1868572"
+                          >doi: 10.1080/21679169.2020.1868572</a
+                        >
+                      </li>
+                      <li>
+                        Manaseer, T. S.*, Whittaker, J. L., Isaac, C.,
+                        Schneider, K., Roduta Roberts, M., &amp; Gross, D. P.
+                        (2020). The reliability of clinical balance tests under
+                        single-task and dual-task testing paradigms in uninjured
+                        active youth and young adults. International Journal of
+                        Sport Physical Therapy, 15, 487-500.
+                      </li>
+                      <li>
+                        Concannon, B.*, Esmail, S &amp; Roduta Roberts, M.
+                        (2020). Immersive virtual reality for the reduction of
+                        state anxiety in clinical interview exams: A prospective
+                        cohort study. JMIR Serious Games, 8(3):e18313.
+                        <a href="https://doi.org/10.2196/18313"
+                          >doi: 10.2196/18313</a
+                        >
+                      </li>
+                      <li>
+                        Roduta Roberts, M., Cook, M.*, &amp; Chao, I. C. I.*
+                        (2020). Exploring assessor cognition as a source of
+                        score variability in a performance assessment of
+                        practice-based competencies. BMC Medical Education, 20,
+                        168.
+                        <a href="https://doi.org/10.1186/s12909-020-02077-6"
+                          >doi: 10.1186/s12909-020-02077-6</a
+                        >
+                      </li>
+                      <li>
+                        Amirav, I., Vandall-Walker, V., Rasiah, J., Saunders,
+                        L., Belur, H., Sahlin, B., Roduta Roberts, M., &amp;
+                        Redlich-Amirav, D. (2020). An asthma specialist's
+                        consult letter: What do parents think about receiving a
+                        copy? Journal of Asthma and Allergy, 13, 179-186.
+                        <a href="https://doi.org/10.2147/JAA.S249893"
+                          >doi: 10.2147/JAA.S249893</a
+                        >
+                      </li>
+                      <li>
+                        Chao, I. C. I.*, Nicpon, K.*, &amp; Roduta Roberts, M.
+                        (2020). Cognitive Stimulation Therapy and quality of
+                        life: A critical review. Physical and Occupational
+                        Therapy in Geriatrics, 38, 203-229.
+                        <a href="https://doi.org/10.1080/02703181.2020.1716915"
+                          >doi: 10.1080/02703181.2020.1716915</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- eof .isotope_container.row -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div id="footer"></div>
+      </div>
+      <!-- eof #box_wrapper -->
+    </div>
+    <!-- eof #canvas -->
+
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
