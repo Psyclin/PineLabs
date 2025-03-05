@@ -12,10 +12,10 @@ export const footerTemplate = `
         <div class="widget widget_text greylinks topmargin_20">
           <h3 class="widget-title">PINE lab</h3>
           <img  
-          src="images/PINE lab-logo NB.png"
+          src="https://www.pinelab.ca/images/PINE lab-logo NB.png"
           alt=""
           /> 
-          <a href="index.html"></a>
+          <a href="https://www.pinelab.ca/index.html"></a>
           <p>Participation, Inclusion, and Education.</p>
           &nbsp;
         </div> 
@@ -52,24 +52,24 @@ export const footerTemplate = `
           <h3 class="widget-title">Navigation</h3>
           <ul class="menu">
             <li class="">
-              <a href="index.html">Home</a>
+              <a href="https://www.pinelab.ca/index.html">Home</a>
             </li>
             <li class="">
-              <a href="group_projects.html">Projects</a>
+              <a href="https://www.pinelab.ca/group_projects.html">Projects</a>
             </li>
             <li class="">
-              <a href="principal_investigators.html"
+              <a href="https://www.pinelab.ca/principal_investigators.html"
                 >Principal Investigators</a
               >
             </li>
             <li class="">
-              <a href="lab_members.html">Lab Members</a>
+              <a href="https://www.pinelab.ca/lab_members.html">Lab Members</a>
             </li>
             <li class="">
-              <a href="publications.html">Publications</a>
+              <a href="https://www.pinelab.ca/publications.html">Publications</a>
             </li>
             <li class="">
-              <a href="knowledge_translation.html">Knowledge Translation</a>
+              <a href="https://www.pinelab.ca/knowledge_translation.html">Knowledge Translation</a>
             </li>
           </ul>
         </div>
