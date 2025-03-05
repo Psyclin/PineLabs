@@ -1,6 +1,7 @@
-"use strict";
 import { headerTemplate } from './header.js';
 import { footerTemplate } from './footer.js';
+"use strict";
+
 //Wrapping all JavaScript code into a IIFE function for prevent global variables creation
 (function(){
 
