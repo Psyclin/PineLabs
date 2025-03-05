@@ -1,4 +1,4 @@
-export const headertemplate = `
+export const headerTemplate = `
 <header
   class="page_header header_white table_section columns_margin_0 toggle-xs-right"
   id="header"
