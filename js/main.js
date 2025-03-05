@@ -4,6 +4,21 @@
 
 //hidding menu elements that do not fit in menu width
 //processing center logo
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('https://psyclin.github.io/PineLabs/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+    fetch('https://psyclin.github.io/PineLabs/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+    });
+});
+
 function menuHideExtraElements() {
 	
 	//cleaneng changed elements
@@ -1091,16 +1106,3 @@ jQuery('.wf-item').on('click', function() {
 
 //end of IIFE function
 })();
-
-document.addEventListener("DOMContentLoaded", function() {
-    fetch('https://psyclin.github.io/PineLabs/header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header').innerHTML = data;
-        });
-    fetch('https://psyclin.github.io/PineLabs/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer').innerHTML = data;
-    });
-});

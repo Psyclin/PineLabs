@@ -13757,17 +13757,3 @@ tr.item-editable .media-left img {
 	margin-right: -40px;
 	padding: 20px 40px;
 }
-
-/* addons */
-/* footer logo */
-.footer-logo {
-    max-width: 100%;
-    height: auto;
-    width: 150px; /* Adjust this value as needed */
-}
-
-@media (max-width: 768px) {
-    .footer-logo {
-      width: 100px; /* Adjust this value as needed for smaller screens */
-    }
-}
