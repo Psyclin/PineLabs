@@ -1,7 +1,6 @@
 export const headerTemplate = `
 <header
   class="page_header header_white table_section columns_margin_0 toggle-xs-right"
-  id="header"
 >
   <div class="container-fluid">
     <div class="row">
@@ -11,7 +10,7 @@ export const headerTemplate = `
           class="logo logo_image"
         >
           <img
-            src="https://www.pinelab.ca/images/PINE lab-logo NB.png"
+            src="images/PINE lab-Header.png"
             alt=""
           />
         </a>

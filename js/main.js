@@ -10,9 +10,10 @@ import { footerTemplate } from './footer.js';
 
 
 document.addEventListener("DOMContentLoaded", function() {
-	document.getElementById('header').innerHTML = headerTemplate;
+	//document.getElementById('heads').innerHTML = headerTemplate;
     document.getElementById('footer').innerHTML = footerTemplate;
 });
+
 
 function menuHideExtraElements() {
 	

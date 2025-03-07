@@ -19,13 +19,6 @@ export const footerTemplate = `
           <p>Participation, Inclusion, and Education.</p>
           &nbsp;
         </div> 
-        
-
-        <div class="col-lg-2 col-md-3 col-sm-5">
-          <span class="toggle_menu visible-xs">
-            <span></span>
-          </span>
-        </div>
       </div>
 
       <div
