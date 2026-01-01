@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <title>PINELabs</title>
+    <meta charset="utf-8" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/animations.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/fonts.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/main.css"
+      id="color-switcher-link"
+    />
+    <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+      <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!--[if lt IE 9]>
+      <div class="bg-danger text-center">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/" class="highlight"
+          >upgrade your browser</a
+        >
+        to improve your experience.
+      </div>
+    <![endif]-->
+
+    <div class="preloader">
+      <div class="preloader_image"></div>
+    </div>
+
+    <!-- search modal -->
+    <div
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="search_modal"
+      id="search_modal"
+    >
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">
+          <i class="rt-icon2-cross2"></i>
+        </span>
+      </button>
+      <div class="widget widget_search">
+        <form
+          method="get"
+          class="searchform search-form form-inline"
+          action="./"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              value=""
+              name="search"
+              class="form-control"
+              placeholder="Search keyword"
+              id="modal-search-input"
+            />
+          </div>
+          <button type="submit" class="theme_button">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Unyson messages modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+      <div class="fw-messages-wrap ls with_padding">
+        <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+        <!--		
+		<ul>
+			<li>Message To User</li>
+		</ul>
+		-->
+      </div>
+    </div>
+    <!-- eof .modal -->
+
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+      <div id="box_wrapper">
+        <!-- template sections -->
+
+        <header
+  class="page_header header_white table_section columns_margin_0 toggle-xs-right"
+>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-5">
+        <a
+          href="https://www.pinelab.ca/index.html"
+          class="logo logo_image"
+        >
+          <img
+            src="images/PINE lab-Header.png"
+            alt=""
+          />
+        </a>
+        <span class="toggle_menu visible-xs">
+          <span></span>
+        </span>
+      </div>
+      <!-- eof .header_left_logo -->
+      <div class="col-lg-8 col-md-6 col-sm-2 text-center">
+        <!-- main nav start -->
+        <nav class="mainmenu_wrapper">
+          <ul class="mainmenu nav sf-menu">
+            <li class="active">
+              <a href="https://www.pinelab.ca/index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="https://www.pinelab.ca/group_projects.html"
+                >Projects</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.pinelab.ca/principal_investigators.html"
+                >Principal Investigators</a
+              >
+            </li>
+
+            <li>
+              <a href="https://www.pinelab.ca/lab_members.html"
+                >Lab Members</a
+              >
+            </li>
+
+            <li>
+              <a href="https://www.pinelab.ca/publications.html"
+                >Publications</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pinelab.ca/knowledge_translation.html"
+                >Knowledge Translation</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- eof main nav -->
+        <span class="toggle_menu hidden-xs">
+          <span></span>
+        </span>
+      </div>
+      <!-- eof .header_mainmenu -->
+
+      <!-- eof .header_right_buttons -->
+    </div>
+  </div>
+</header>
+
+        <section
+          class="page_breadcrumbs cs main_color2 parallax section_padding_50"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h2>Hanan Madi</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="ls section_padding_top_100 section_padding_bottom_100">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="text-center">
+                  <img
+                    src="../images/team/Hanan Madi.JPG"
+                    alt=""
+                    class="round"
+                  />
+                  <h2 class="bottommargin_0">Hanan Madi</h2>
+                  <p class="small-text">PH.D. Candidate</p>
+                </div>
+
+                <ul class="list1 no-bullets topmargin_40">
+                  <li>
+                    <div class="media small-teaser">
+                      <div class="media-left">
+                        <div class="highlight size_small">
+                          <i class="rt-icon2-mail2"></i>
+                        </div>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Email:</h4>
+                        hmadi@ualberta.ca
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-6 col-md-offset-1">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs topmargin_40" role="tablist">
+                  <li class="active">
+                    <a href="#tab1" role="tab" data-toggle="tab">Biography</a>
+                  </li>
+                  <li class="inactive">
+                    <a href="#tab2" role="tab" data-toggle="tab">Research</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content top-color-border bottommargin_30">
+                  <div class="tab-pane fade in active" id="tab1">
+                    <h3 class="topmargin_0">Biography:</h3>
+                    <p>
+                      Hanan Madi is a PhD student in Rehabilitation Sciences at 
+                      the Faculty of Rehabilitation Medicine, University of 
+                      Alberta, with extensive experience in occupational 
+                      therapy education and rehabilitation research. Her work 
+                      focuses on advancing campus mental health and occupational 
+                      participation among university students, with particular 
+                      emphasis on the safe and effective use of artificial 
+                      intelligence (AI) tools to support student mental health 
+                      and well-being. Her research explores how digital mental 
+                      health technologies, sensory processing patterns, emotional 
+                      awareness, and coping strategies shape students’ engagement, 
+                      participation, and mental health outcomes within university 
+                      environments. She is especially interested in developing 
+                      evidence-informed, preventative, and inclusive approaches 
+                      that enhance student well-being while carefully addressing 
+                      safety and ethical considerations in AI-supported mental 
+                      health care.
+
+                      Hanan holds a Master’s degree in Clinical Rehabilitation 
+                      Sciences and a Bachelor’s degree in Occupational Therapy. 
+                      With over 13 years of experience in occupational therapy 
+                      education, clinical training, and rehabilitation research, 
+                      she has taught undergraduate occupational therapy courses 
+                      and supervised students in mental health and psychiatric 
+                      settings. Her work bridges research, education, and 
+                      practice to inform meaningful and sustainable mental health 
+                      initiatives on campus. Through her research, she aims to 
+                      contribute evidence that supports prevention, early 
+                      identification, and effective interventions within higher 
+                      education settings, while raising awareness of university 
+                      student mental health needs through peer-reviewed 
+                      publications and academic dissemination.
+
+                      Hanan has published in peer-reviewed journals, including 
+                      research on occupational performance and satisfaction among 
+                      individuals with mental disorders (Madi et al., 2022, 
+                      British Journal of Occupational Therapy) and on deliberate 
+                      self-harm, coping styles, and social support among 
+                      university students (Madi et al., 2024, International 
+                      Journal of Mental Health and Addiction). She is currently 
+                      leading and collaborating on studies examining sensory 
+                      processing patterns, learning styles, and alexithymia among 
+                      university students, with manuscripts submitted to peer-
+                      reviewed journals. Through her doctoral work, Hanan aims 
+                      to contribute to the development of safe, effective, 
+                      ethical, and student-centered AI-supported mental health 
+                      practices in higher education.
+                    </p>
+                    <h3 class="topmargin_0">Ph. D. Thesis:</h3>
+                    <p>
+                      Safe and effective use of AI tools to support mental health 
+                      and well-being among university students
+                    </p>
+                  </div>
+
+                  <div class="tab-pane fade in inactive" id="tab2">
+                    <h3 class="topmargin_0">Research Articles:</h3>
+                    <ul class="list1 darklinks">
+                      <li>
+                        <a href="https://doi.org/10.1177/03080226221089853"
+                          >Occupational performance and satisfaction of 
+                          individuals with mental disorders in Jordan.</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://doi.org/10.1007/s11469-023-01237-1"
+                          >Deliberate self-harm, coping styles, and social support 
+                          among university students in Jordan.</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- eof .tab-content -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div id="footer"></div>
+      </div>
+      <!-- eof #box_wrapper -->
+    </div>
+    <!-- eof #canvas -->
+
+    <script src="../js/compressed.js"></script>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>
